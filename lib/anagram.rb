@@ -1,13 +1,13 @@
 # Your code goes here!
 class Anagram
-  attr_accessor :word
+  attr_accessor :name
   
-  def intialize(word)
-    @word = word
+  def intialize(name)
+    @name = name
   end
   
   
   def match(bunch_of_words)
-    bunch_of_words.select {|word| word.split("").sort == @word.split("").sort}
+    bunch_of_words.select {|word| word.split("").sort == @name.split("").sort}
   end
 end
